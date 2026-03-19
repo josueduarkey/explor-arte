@@ -8,6 +8,7 @@ import DocenteModulePage from "./pages/DocenteModulePage.jsx";
 import DocenteDashboardPage from "./pages/DocenteDashboardPage.jsx";
 import StudentBooksPage from "./pages/StudentBooksPage.jsx";
 import FaqPage from "./pages/FaqPage.jsx";
+import CapacitadorGate from "./components/guards/CapacitadorGate.jsx";
 
 function NotFoundPage() {
   return (
@@ -24,14 +25,29 @@ export default function App() {
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/login" element={<LoginPage />} />
 
-        <Route path="/admin" element={<AdminDashboardPage />} />
+        <Route
+          path="/admin"
+          element={
+            <CapacitadorGate>
+              <AdminDashboardPage />
+            </CapacitadorGate>
+          }
+        />
         <Route
           path="/admin/gestion-modulos"
-          element={<AdminModulesPage />}
+          element={
+            <CapacitadorGate>
+              <AdminModulesPage />
+            </CapacitadorGate>
+          }
         />
         <Route
           path="/admin/ordenar-modulos"
-          element={<AdminReorderPage />}
+          element={
+            <CapacitadorGate>
+              <AdminReorderPage />
+            </CapacitadorGate>
+          }
         />
         <Route
           path="/admin/validacion"

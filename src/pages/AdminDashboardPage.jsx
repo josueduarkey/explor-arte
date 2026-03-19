@@ -1,5 +1,6 @@
 import AppShell from "../components/layout/AppShell.jsx";
 import { Link, useNavigate } from "react-router-dom";
+import { clearCapacitadorUnlocked } from "../lib/capacitadorAuth.js";
 
 export default function AdminDashboardPage() {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function AdminDashboardPage() {
               dashboard_customize
             </span>
             <h1 className="text-xl font-bold tracking-tight text-black">
-              ExplorArte - Panel Admin
+              ExplorArte - Panel Capacitador
             </h1>
           </div>
         </div>
@@ -24,7 +25,7 @@ export default function AdminDashboardPage() {
 
       <main className="max-w-7xl mx-auto px-4 pt-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-primary dark:text-white uppercase tracking-wide">
+          <h2 className="text-xl font-bold text-primary dark:text-white uppercase tracking-wide">
             Gestionar Módulos
           </h2>
           <div className="flex gap-2">
@@ -225,9 +226,21 @@ export default function AdminDashboardPage() {
 
       {/* Bottom Navigation Bar */}
       <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-primary/10 px-4 pb-safe pt-2 z-50">
-        <div className="flex justify-around items-center max-w-lg mx-auto">
+        <div className="flex items-center justify-between max-w-md mx-auto">
           <Link
-            className="flex flex-col items-center gap-1 text-primary"
+            to="/login"
+            onClick={() => clearCapacitadorUnlocked()}
+            className="flex flex-1 flex-col items-center gap-1 text-primary"
+          >
+            <span className="material-symbols-outlined text-2xl font-fill">
+              home
+            </span>
+            <span className="text-[10px] font-bold uppercase tracking-tighter">
+              Inicio
+            </span>
+          </Link>
+          <Link
+            className="flex flex-1 flex-col items-center gap-1 text-primary"
             to="/admin"
           >
             <span className="material-symbols-outlined text-2xl font-fill">
@@ -238,7 +251,7 @@ export default function AdminDashboardPage() {
             </span>
           </Link>
           <Link
-            className="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
+            className="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
             to="/admin/gestion-modulos"
           >
             <span className="material-symbols-outlined text-2xl">
@@ -249,7 +262,7 @@ export default function AdminDashboardPage() {
             </span>
           </Link>
           <Link
-            className="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
+            className="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
             to="/faq?source=admin"
           >
             <span className="material-symbols-outlined text-2xl">settings</span>

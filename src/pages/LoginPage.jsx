@@ -1,5 +1,6 @@
 import AppShell from "../components/layout/AppShell.jsx";
 import { useNavigate } from "react-router-dom";
+import { isCapacitadorUnlocked } from "../lib/capacitadorAuth.js";
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -40,7 +41,13 @@ export default function LoginPage() {
           <div className="flex flex-col w-full gap-4">
             <button
               type="button"
-              onClick={() => navigate("/admin")}
+              onClick={() =>
+                isCapacitadorUnlocked()
+                  ? navigate("/admin")
+                  : navigate(
+                      `/admin/validacion?redirect=${encodeURIComponent("/admin")}`
+                    )
+              }
               className="group flex flex-col items-center justify-center w-full gap-3 p-6 bg-[#000080] hover:brightness-110 text-white rounded-2xl shadow-xl shadow-[#000080]/20 transition-all border-b-4 border-black/20 active:border-b-0 active:translate-y-1"
             >
               <div className="bg-white/20 rounded-full p-3 flex items-center justify-center">
