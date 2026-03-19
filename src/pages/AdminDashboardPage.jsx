@@ -9,23 +9,16 @@ export default function AdminDashboardPage() {
       role="admin"
       className="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-slate-100 min-h-screen pb-24"
     >
-      <header
-        className="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 py-4"
-      >
+      <header className="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 py-4">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-primary text-3xl">
               dashboard_customize
             </span>
-            <h1 className="text-xl font-bold tracking-tight text-primary dark:text-white">
+            <h1 className="text-xl font-bold tracking-tight text-black">
               ExplorArte - Panel Admin
             </h1>
           </div>
-          <button type="button" className="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary">
-            <span className="material-symbols-outlined">
-              account_circle
-            </span>
-          </button>
         </div>
       </header>
 
@@ -62,7 +55,9 @@ export default function AdminDashboardPage() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2EjB8Lu8PBNN9OLHQTWApZ3IG1gxapoV_TbuhtkKzKmf6kbwEa9srjipJOst25Kh7aAq-42wkJsmVoMBgyA5NOqEKaDQuwF9yFmE59Aok_YJ2kKnfaAxUrkUMvqZulC76D49AQhwNA90KW2Vybwb3yOV5KRC7kMYkV0hCY8oUl_Xs5jkTXhz-4ogC4jSDu6ejGJktSHtdyTyAeBxFxJubx36_8_OG9ibGH91vq1APGJ0JcA6rfmiyM3dI-7tJ4SvUUNKlCEwNNYgw"
               />
               <div className="absolute top-2 right-2 p-2 bg-white/90 dark:bg-slate-900/90 rounded-lg cursor-grab active:cursor-grabbing text-primary">
-                <span className="material-symbols-outlined">drag_indicator</span>
+                <span className="material-symbols-outlined">
+                  drag_indicator
+                </span>
               </div>
             </div>
             <div className="p-4">
@@ -75,7 +70,8 @@ export default function AdminDashboardPage() {
                 </span>
               </div>
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
-                Exploración cronológica desde el arte rupestre hasta el neoclasicismo.
+                Exploración cronológica desde el arte rupestre hasta el
+                neoclasicismo.
               </p>
               <div className="flex gap-2">
                 <button
@@ -83,7 +79,9 @@ export default function AdminDashboardPage() {
                   onClick={() => navigate("/admin/gestion-modulos")}
                   className="flex-1 py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors"
                 >
-                  <span className="material-symbols-outlined text-sm">edit</span>
+                  <span className="material-symbols-outlined text-sm">
+                    edit
+                  </span>
                   EDITAR
                 </button>
                 <button
@@ -106,7 +104,9 @@ export default function AdminDashboardPage() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoMJcsPyYwLFz_gjp5LXvGPwElFPqAe_O1wzJDzKgQDMtTWeX9e-JlySWp0Ys1o7LsTydbBa7cRlBr-UEvcRKtYGnEERRvt8Hes4Wh_cQf1rArwTowaapHLM4TtaUEMQXnCWxYH1yP-K3AhMFdJ_bqNDTnpGBXbfiF_N55N3OzQ4WFx_e9ukJADWuyhz-dTt02UsFBpZ86Nm0b2yPmjzMSH4KdA_7iv2mdBarwjQWDJMetPl3_ELVa92bIheLHMoQa6UeMTqgZU4HA"
               />
               <div className="absolute top-2 right-2 p-2 bg-white/90 dark:bg-slate-900/90 rounded-lg cursor-grab text-primary">
-                <span className="material-symbols-outlined">drag_indicator</span>
+                <span className="material-symbols-outlined">
+                  drag_indicator
+                </span>
               </div>
             </div>
             <div className="p-4">
@@ -126,7 +126,8 @@ export default function AdminDashboardPage() {
                 onClick={() => navigate("/admin/gestion-modulos")}
                 className="w-full py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2"
               >
-                <span className="material-symbols-outlined text-sm">edit</span> EDITAR
+                <span className="material-symbols-outlined text-sm">edit</span>{" "}
+                EDITAR
               </button>
             </div>
           </div>
@@ -140,7 +141,9 @@ export default function AdminDashboardPage() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBamJ219b543t7hf-yF077wD0bIDv8ljp6q2stykC4vtFG2Yet6JNPyd0PKKd1o6T_duUsbAgvzQnNOLgfHWtOqHe-Bie67D3kd8UQGru8mUzkcckeg0jSzRHkR_rOSiXEd9BXDsfIAhp77d9Pki2QFZnfL14-c8Xjr54GR_JnRKUtHoajTiiTAum9sfWsvNMj70hkYkThtoXEtqbqVo9frgxsSaypHAky8Eyew1JYTYCDJKQzmR9JaHp_n_5kmWTmimaxOIwB2NLQ1"
               />
               <div className="absolute top-2 right-2 p-2 bg-white/90 dark:bg-slate-900/90 rounded-lg cursor-grab text-primary">
-                <span className="material-symbols-outlined">drag_indicator</span>
+                <span className="material-symbols-outlined">
+                  drag_indicator
+                </span>
               </div>
             </div>
             <div className="p-4">
@@ -153,14 +156,16 @@ export default function AdminDashboardPage() {
                 </span>
               </div>
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
-                Guía completa sobre soportes, pigmentos y herramientas profesionales.
+                Guía completa sobre soportes, pigmentos y herramientas
+                profesionales.
               </p>
               <button
                 type="button"
                 onClick={() => navigate("/admin/gestion-modulos")}
                 className="w-full py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2"
               >
-                <span className="material-symbols-outlined text-sm">edit</span> EDITAR
+                <span className="material-symbols-outlined text-sm">edit</span>{" "}
+                EDITAR
               </button>
             </div>
           </div>
@@ -174,12 +179,16 @@ export default function AdminDashboardPage() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQ_hFgCayB-kFHVjFnfC03r8sp1IuUumrdCFR-5PFFMPFZaLVG-gzErA3WBZRAIrqI41f-oSN4vPQv3KfzVJW5FRaeS5BW_tS5DsvO7gJQ-jL1CX6aKF0I_CAyHCxHI2o2KwN648otESizdhA2t5F8lZxW2IRJx3RKnZUm1YkZTWf34l75afAcftR2cIckInaxl5Hk0ROlX0eq8Zl7RrdbRFK-eTEBRNqIsR5-zXs__o9WwG9kapzbsF9K2VIPCZESzZvwr8_pDne"
               />
               <div className="absolute top-2 right-2 p-2 bg-white/90 dark:bg-slate-900/90 rounded-lg cursor-grab text-primary">
-                <span className="material-symbols-outlined">drag_indicator</span>
+                <span className="material-symbols-outlined">
+                  drag_indicator
+                </span>
               </div>
             </div>
             <div className="p-4">
               <div className="flex justify-between items-start mb-2">
-                <h3 className="font-bold text-lg leading-tight">Módulo 4: Color</h3>
+                <h3 className="font-bold text-lg leading-tight">
+                  Módulo 4: Color
+                </h3>
                 <span className="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">
                   ACTIVO
                 </span>
@@ -192,7 +201,8 @@ export default function AdminDashboardPage() {
                 onClick={() => navigate("/admin/gestion-modulos")}
                 className="w-full py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2"
               >
-                <span className="material-symbols-outlined text-sm">edit</span> EDITAR
+                <span className="material-symbols-outlined text-sm">edit</span>{" "}
+                EDITAR
               </button>
             </div>
           </div>
@@ -216,23 +226,36 @@ export default function AdminDashboardPage() {
       {/* Bottom Navigation Bar */}
       <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-primary/10 px-4 pb-safe pt-2 z-50">
         <div className="flex justify-around items-center max-w-lg mx-auto">
-          <Link className="flex flex-col items-center gap-1 text-primary" to="/admin">
-            <span className="material-symbols-outlined text-2xl font-fill">grid_view</span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">Módulos</span>
+          <Link
+            className="flex flex-col items-center gap-1 text-primary"
+            to="/admin"
+          >
+            <span className="material-symbols-outlined text-2xl font-fill">
+              grid_view
+            </span>
+            <span className="text-[10px] font-bold uppercase tracking-tighter">
+              Módulos
+            </span>
           </Link>
           <Link
             className="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
             to="/admin/gestion-modulos"
           >
-            <span className="material-symbols-outlined text-2xl">folder_open</span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">Recursos</span>
+            <span className="material-symbols-outlined text-2xl">
+              folder_open
+            </span>
+            <span className="text-[10px] font-bold uppercase tracking-tighter">
+              Recursos
+            </span>
           </Link>
           <Link
             className="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
             to="/faq?source=admin"
           >
             <span className="material-symbols-outlined text-2xl">settings</span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">Configuración</span>
+            <span className="text-[10px] font-bold uppercase tracking-tighter">
+              Configuración
+            </span>
           </Link>
         </div>
       </nav>
@@ -250,4 +273,3 @@ export default function AdminDashboardPage() {
     </AppShell>
   );
 }
-

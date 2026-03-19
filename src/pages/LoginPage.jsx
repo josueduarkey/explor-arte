@@ -10,7 +10,8 @@ export default function LoginPage() {
       className="bg-custom-bg text-custom-text min-h-screen"
     >
       <div className="font-display min-h-screen flex flex-col items-center">
-        <header className="w-full max-w-[480px] flex items-center justify-between p-4 sticky top-0 z-10 bg-custom-bg">
+        <header className="w-full max-w-[480px] flex items-center justify-between p-4 z-10 bg-custom-bg">
+          <span className="material-symbols-outlined">menu_book</span>
           <h1 className="text-xl font-black tracking-tight flex-1 text-center uppercase">
             ExplorArte
           </h1>
@@ -28,10 +29,10 @@ export default function LoginPage() {
 
         <main className="flex-1 w-full max-w-[480px] flex flex-col px-6 py-6 gap-6 items-center justify-center">
           <div className="text-center space-y-2">
-            <h2 className="text-4xl font-black leading-tight tracking-tight">
-              ¡Hola, Bienvenido/a!
+            <h2 className="text-3xl font-black leading-tight tracking-tight">
+              ¡Hola, Bienvenida/o!
             </h2>
-            <p className="text-xl font-semibold opacity-80">
+            <p className="text-lg font-semibold opacity-80">
               ¿Cómo quieres ingresar hoy?
             </p>
           </div>
@@ -94,9 +95,6 @@ export default function LoginPage() {
                 <span className="text-2xl font-black tracking-wider uppercase block">
                   Soy Estudiante
                 </span>
-                <span className="text-sm font-bold opacity-90 block mt-1">
-                  Solo para ver mis libros en PDF
-                </span>
               </div>
             </button>
           </div>
@@ -113,14 +111,15 @@ export default function LoginPage() {
         </main>
 
         <footer className="w-full max-w-[480px] p-6 text-center">
-          <button
-            onClick={() => navigate("/faq")}
-            type="button"
-            className="text-custom-text font-black text-base flex items-center justify-center gap-2 w-full py-4 hover:text-primary-orange transition-colors"
+          <a
+            href="mailto:josueduardo.dev@gmail.com?subject=Problemas para ingresar a ExplorArte"
+            className="group text-custom-text font-black text-base flex items-center justify-center gap-2 w-full py-4 hover:text-primary-orange transition-colors"
           >
-            <span className="material-symbols-outlined text-xl">help</span>
-            ¿Problemas para ingresar? Contacto
-          </button>
+            <span className="material-symbols-outlined text-xl group-hover:hidden">
+              help
+            </span>
+            <span>¿Problemas para ingresar? Contacto</span>
+          </a>
           <div className="h-6" />
         </footer>
       </div>
