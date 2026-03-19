@@ -5,7 +5,10 @@ export default function LoginPage() {
   const navigate = useNavigate();
 
   return (
-    <AppShell role="login" className="bg-custom-bg text-custom-text min-h-screen">
+    <AppShell
+      role="login"
+      className="bg-custom-bg text-custom-text min-h-screen"
+    >
       <div className="font-display min-h-screen flex flex-col items-center">
         <header className="w-full max-w-[480px] flex items-center justify-between p-4 sticky top-0 z-10 bg-custom-bg">
           <h1 className="text-xl font-black tracking-tight flex-1 text-center uppercase">
@@ -14,7 +17,7 @@ export default function LoginPage() {
           <div className="flex items-center justify-end size-12">
             <button
               type="button"
-              className="hover:scale-110 transition-transform p-2 rounded-full bg-black/5 text-custom-text"
+              className="hover:scale-110 transition-transform p-3 rounded-full bg-black/5 text-custom-text flex items-center justify-center"
             >
               <span className="material-symbols-outlined" data-icon="refresh">
                 refresh
@@ -39,9 +42,9 @@ export default function LoginPage() {
               onClick={() => navigate("/admin")}
               className="group flex flex-col items-center justify-center w-full gap-3 p-6 bg-[#000080] hover:brightness-110 text-white rounded-2xl shadow-xl shadow-[#000080]/20 transition-all border-b-4 border-black/20 active:border-b-0 active:translate-y-1"
             >
-              <div className="bg-white/20 p-3 rounded-full">
+              <div className="bg-white/20 rounded-full p-3 flex items-center justify-center">
                 <span
-                  className="material-symbols-outlined text-5xl"
+                  className="material-symbols-outlined text-5xl p-0"
                   data-icon="settings"
                 >
                   settings
@@ -49,10 +52,7 @@ export default function LoginPage() {
               </div>
               <div className="text-center">
                 <span className="text-2xl font-black tracking-wider uppercase block leading-none">
-                  Soy Administrador
-                </span>
-                <span className="text-sm font-bold opacity-90 uppercase mt-1 block">
-                  / CAPACITADOR
+                  Soy Capacitador
                 </span>
               </div>
             </button>
@@ -62,7 +62,7 @@ export default function LoginPage() {
               onClick={() => navigate("/docente/modulo")}
               className="group flex flex-col items-center justify-center w-full gap-3 p-6 bg-[#007BFF] hover:brightness-110 text-white rounded-2xl shadow-xl shadow-[#007BFF]/20 transition-all border-b-4 border-black/20 active:border-b-0 active:translate-y-1"
             >
-              <div className="bg-white/20 p-3 rounded-full">
+              <div className="bg-white/20 rounded-full p-3 flex items-center justify-center">
                 <span
                   className="material-symbols-outlined text-5xl"
                   data-icon="school"
@@ -82,7 +82,7 @@ export default function LoginPage() {
               onClick={() => navigate("/estudiante/libros")}
               className="group flex flex-col items-center justify-center w-full gap-3 p-6 bg-[#5DADE2] hover:brightness-110 text-white rounded-2xl shadow-xl shadow-[#5DADE2]/20 transition-all border-b-4 border-black/20 active:border-b-0 active:translate-y-1"
             >
-              <div className="bg-white/20 p-3 rounded-full">
+              <div className="bg-white/20 rounded-full p-3 flex items-center justify-center">
                 <span
                   className="material-symbols-outlined text-5xl"
                   data-icon="menu_book"
@@ -101,7 +101,7 @@ export default function LoginPage() {
             </button>
           </div>
 
-          <div className="mt-2 opacity-10 flex gap-6">
+          <div className="mt-2 opacity-60 flex gap-6">
             <span className="material-symbols-outlined text-5xl">draw</span>
             <span className="material-symbols-outlined text-5xl">
               auto_stories
@@ -114,8 +114,9 @@ export default function LoginPage() {
 
         <footer className="w-full max-w-[480px] p-6 text-center">
           <button
+            onClick={() => navigate("/faq")}
             type="button"
-            className="text-custom-text font-black text-base underline underline-offset-4 decoration-primary-orange/50 flex items-center justify-center gap-2 w-full py-4 hover:text-primary-orange transition-colors"
+            className="text-custom-text font-black text-base flex items-center justify-center gap-2 w-full py-4 hover:text-primary-orange transition-colors"
           >
             <span className="material-symbols-outlined text-xl">help</span>
             ¿Problemas para ingresar? Contacto
@@ -126,4 +127,3 @@ export default function LoginPage() {
     </AppShell>
   );
 }
-
