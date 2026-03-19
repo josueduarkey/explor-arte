@@ -129,15 +129,16 @@ export default function FaqPage() {
                 está listo para ayudarte personalmente.
               </p>
             </div>
-            <button
-              type="button"
+            <a
               className="w-full bg-[#007BFF] hover:bg-[#0069e0] text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-[#007BFF]/20 transition-all active:scale-95 flex items-center justify-center gap-2"
+              href="https://wa.me/50376753999?text=Hola, tengo una duda con respecto al programa de ExplorArte"
+              target="_blank"
             >
               <span className="material-symbols-outlined">send</span>
-              <span className="uppercase text-sm tracking-wide">
-                Enviar una nueva pregunta a capacitadores
+              <span className="uppercase text-center text-sm tracking-wide">
+                Hacer una pregunta a capacitadores
               </span>
-            </button>
+            </a>
           </div>
         </main>
 

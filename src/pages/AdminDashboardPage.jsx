@@ -8,7 +8,7 @@ export default function AdminDashboardPage() {
   return (
     <AppShell
       role="admin"
-      className="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-slate-100 min-h-screen pb-24"
+      className="bg-[#EFF4FF] font-display text-[#000080]  min-h-screen pb-24"
     >
       <header className="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 px-4 py-4">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
@@ -16,7 +16,7 @@ export default function AdminDashboardPage() {
             <span className="material-symbols-outlined text-primary text-3xl">
               dashboard_customize
             </span>
-            <h1 className="text-xl font-bold tracking-tight text-black">
+            <h1 className="text-xl font-bold tracking-tight text-[#000070] ">
               ExplorArte - Panel Capacitador
             </h1>
           </div>
@@ -25,21 +25,21 @@ export default function AdminDashboardPage() {
 
       <main className="max-w-7xl mx-auto px-4 pt-6">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl font-bold text-primary dark:text-white uppercase tracking-wide">
+          <h2 className="text-xl font-bold text-[#000080] uppercase tracking-wide">
             Gestionar Módulos
           </h2>
           <div className="flex gap-2">
             <button
               type="button"
               onClick={() => navigate("/admin/ordenar-modulos")}
-              className="p-2 rounded-lg bg-white dark:bg-slate-800 border border-primary/20 shadow-sm text-primary"
+              className="p-2 rounded-lg bg-[#000080] border border-[#000080]/20 shadow-sm text-white hover:bg-[#000066] transition-colors"
             >
               <span className="material-symbols-outlined">filter_list</span>
             </button>
             <button
               type="button"
               onClick={() => navigate("/admin/gestion-modulos")}
-              className="p-2 rounded-lg bg-white dark:bg-slate-800 border border-primary/20 shadow-sm text-primary"
+              className="p-2 rounded-lg bg-[#000080] border border-[#000080]/20 shadow-sm text-white hover:bg-[#000066] transition-colors"
             >
               <span className="material-symbols-outlined">search</span>
             </button>
@@ -78,7 +78,7 @@ export default function AdminDashboardPage() {
                 <button
                   type="button"
                   onClick={() => navigate("/admin/gestion-modulos")}
-                  className="flex-1 py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors"
+                  className="flex-1 py-2 bg-[#000080]  text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#000050]/90 transition-colors"
                 >
                   <span className="material-symbols-outlined text-sm">
                     edit
@@ -88,7 +88,7 @@ export default function AdminDashboardPage() {
                 <button
                   type="button"
                   onClick={() => navigate("/docente/modulo")}
-                  className="px-3 py-2 border border-primary/20 rounded-lg text-primary hover:bg-primary/5"
+                  className="flex justify-center items-center px-3 py-2 border border-[#000080]/20 rounded-lg text-[#000080] hover:bg-[#000080]/5"
                 >
                   <span className="material-symbols-outlined">visibility</span>
                 </button>
@@ -122,14 +122,25 @@ export default function AdminDashboardPage() {
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
                 Óleo, acuarela, acrílico y técnicas mixtas contemporáneas.
               </p>
-              <button
-                type="button"
-                onClick={() => navigate("/admin/gestion-modulos")}
-                className="w-full py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2"
-              >
-                <span className="material-symbols-outlined text-sm">edit</span>{" "}
-                EDITAR
-              </button>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => navigate("/admin/gestion-modulos")}
+                  className="flex-1 py-2 bg-[#000080]  text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#000050]/90 transition-colors"
+                >
+                  <span className="material-symbols-outlined text-sm">
+                    edit
+                  </span>
+                  EDITAR
+                </button>
+                <button
+                  type="button"
+                  onClick={() => navigate("/docente/modulo")}
+                  className="flex justify-center items-center px-3 py-2 border border-[#000080]/20 rounded-lg text-[#000080] hover:bg-[#000080]/5"
+                >
+                  <span className="material-symbols-outlined">visibility</span>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -159,15 +170,26 @@ export default function AdminDashboardPage() {
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
                 Guía completa sobre soportes, pigmentos y herramientas
                 profesionales.
-              </p>
-              <button
-                type="button"
-                onClick={() => navigate("/admin/gestion-modulos")}
-                className="w-full py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2"
-              >
-                <span className="material-symbols-outlined text-sm">edit</span>{" "}
-                EDITAR
-              </button>
+              </p>{" "}
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => navigate("/admin/gestion-modulos")}
+                  className="flex-1 py-2 bg-[#000080]  text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#000050]/90 transition-colors"
+                >
+                  <span className="material-symbols-outlined text-sm">
+                    edit
+                  </span>
+                  EDITAR
+                </button>
+                <button
+                  type="button"
+                  onClick={() => navigate("/docente/modulo")}
+                  className="flex justify-center items-center px-3 py-2 border border-[#000080]/20 rounded-lg text-[#000080] hover:bg-[#000080]/5"
+                >
+                  <span className="material-symbols-outlined">visibility</span>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -196,15 +218,25 @@ export default function AdminDashboardPage() {
               </div>
               <p className="text-sm text-slate-500 dark:text-slate-400 mb-4 line-clamp-2">
                 Teoría cromática, psicología del color y armonías visuales.
-              </p>
-              <button
-                type="button"
-                onClick={() => navigate("/admin/gestion-modulos")}
-                className="w-full py-2 bg-primary text-white rounded-lg font-semibold flex items-center justify-center gap-2"
-              >
-                <span className="material-symbols-outlined text-sm">edit</span>{" "}
-                EDITAR
-              </button>
+              </p>              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => navigate("/admin/gestion-modulos")}
+                  className="flex-1 py-2 bg-[#000080]  text-white rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-[#000050]/90 transition-colors"
+                >
+                  <span className="material-symbols-outlined text-sm">
+                    edit
+                  </span>
+                  EDITAR
+                </button>
+                <button
+                  type="button"
+                  onClick={() => navigate("/docente/modulo")}
+                  className="flex justify-center items-center px-3 py-2 border border-[#000080]/20 rounded-lg text-[#000080] hover:bg-[#000080]/5"
+                >
+                  <span className="material-symbols-outlined">visibility</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -213,8 +245,8 @@ export default function AdminDashboardPage() {
         <div className="mt-12 flex justify-center pb-8">
           <button
             type="button"
-            onClick={() => navigate("/admin/validacion")}
-            className="group flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/30 hover:scale-[1.02] transition-all"
+            onClick={() => navigate("/admin/gestion-modulos")}
+            className="group flex items-center gap-3 bg-[#000080] text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-[#000066] hover:shadow-[#000080]/30 hover:scale-[1.02] transition-all"
           >
             <span className="material-symbols-outlined text-2xl group-hover:rotate-90 transition-transform">
               add_circle
@@ -252,17 +284,6 @@ export default function AdminDashboardPage() {
           </Link>
           <Link
             className="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
-            to="/admin/gestion-modulos"
-          >
-            <span className="material-symbols-outlined text-2xl">
-              folder_open
-            </span>
-            <span className="text-[10px] font-bold uppercase tracking-tighter">
-              Recursos
-            </span>
-          </Link>
-          <Link
-            className="flex flex-1 flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors"
             to="/faq?source=admin"
           >
             <span className="material-symbols-outlined text-2xl">settings</span>
@@ -272,17 +293,6 @@ export default function AdminDashboardPage() {
           </Link>
         </div>
       </nav>
-
-      {/* Floating Action Button for Mobile */}
-      <div className="fixed bottom-20 right-4 lg:hidden">
-        <button
-          type="button"
-          onClick={() => navigate("/admin/validacion")}
-          className="bg-primary text-white size-14 rounded-full shadow-2xl flex items-center justify-center"
-        >
-          <span className="material-symbols-outlined text-3xl">add</span>
-        </button>
-      </div>
     </AppShell>
   );
 }

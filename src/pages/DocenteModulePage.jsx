@@ -16,7 +16,7 @@ export default function DocenteModulePage() {
               <button
                 type="button"
                 onClick={() => navigate(-1)}
-                className="text-[#007BFF] bg-[#007BFF]/10 hover:bg-[#007BFF]/20 p-2 rounded-full transition-colors"
+                className="flex items-center justify-center text-[#007BFF] bg-[#007BFF]/10 hover:bg-[#007BFF]/20 p-2 rounded-full transition-colors"
               >
                 <span className="material-symbols-outlined text-2xl font-bold">
                   arrow_back
