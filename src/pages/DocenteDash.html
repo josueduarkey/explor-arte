@@ -1,0 +1,226 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#007BFF",
+                        "success": "#2ECC71",
+                        "info": "#117899",
+                        "alert": "#F1C40F",
+                        "text-main": "#333333",
+                        "background-custom": "#FFFDF5",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.75rem", "lg": "1.25rem", "xl": "1.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+            background-color: #FFFDF5;
+            color: #333333;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* High contrast focus for older users */
+        button:focus {
+            outline: 3px solid #F1C40F;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="font-display antialiased text-text-main">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-32">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center bg-white border-b-2 border-primary/20 p-4 justify-between shadow-sm">
+<div class="flex items-center gap-4 flex-1">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-3xl" style="">account_circle</span>
+</div>
+<h1 class="text-text-main text-xl font-bold leading-tight tracking-tight" style="">ExplorArte - Biblioteca</h1>
+</div>
+<button aria-label="Notificaciones" class="p-2 text-text-main/70" style="">
+<span class="material-symbols-outlined text-3xl" style="">notifications</span>
+</button>
+</header>
+<!-- Offline Section -->
+<section class="px-4 pt-8 pb-6 bg-alert/5">
+<div class="flex items-center gap-3 mb-5">
+<span class="material-symbols-outlined text-primary font-bold text-2xl" style="">signal_wifi_off</span>
+<h2 class="text-text-main text-base font-extrabold uppercase tracking-widest" style="">Materiales Descargados</h2>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+<!-- Offline Card 1 -->
+<div class="flex min-w-[160px] flex-1 gap-4 rounded-xl border-2 border-info/20 bg-white p-5 flex-col shadow-md">
+<div class="text-info">
+<span class="material-symbols-outlined text-4xl" style="">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<h3 class="text-text-main text-base font-bold" style="">Guía PDF</h3>
+<p class="text-text-main/60 text-sm font-medium" style="">Disponible offline</p>
+</div>
+</div>
+<!-- Offline Card 2 -->
+<div class="flex min-w-[160px] flex-1 gap-4 rounded-xl border-2 border-info/20 bg-white p-5 flex-col shadow-md">
+<div class="text-info">
+<span class="material-symbols-outlined text-4xl" style="">audio_file</span>
+</div>
+<div class="flex flex-col">
+<h3 class="text-text-main text-base font-bold" style="">Video Clase</h3>
+<p class="text-text-main/60 text-sm font-medium" style="">Disponible offline</p>
+</div>
+</div>
+<!-- Offline Card 3 -->
+<div class="flex min-w-[160px] flex-1 gap-4 rounded-xl border-2 border-info/20 bg-white p-5 flex-col shadow-md">
+<div class="text-info">
+<span class="material-symbols-outlined text-4xl" style="">video_file</span>
+</div>
+<div class="flex flex-col">
+<h3 class="text-text-main text-base font-bold" style="">Video Resumen</h3>
+<p class="text-text-main/60 text-sm font-medium" style="">Disponible offline</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Body: Modules Grid -->
+<main class="px-4 py-8">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-text-main text-2xl font-black" style="">Módulos de Aprendizaje</h2>
+<span class="bg-success text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" style="">Progreso: 4/12</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Module Card 1 -->
+<div class="bg-white border-2 border-info/10 rounded-2xl p-5 flex flex-col gap-6 shadow-lg">
+<div class="flex items-center gap-5">
+<div class="size-14 rounded-xl bg-info text-white flex items-center justify-center font-black text-2xl shadow-sm" style="">1</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-info font-bold" style="">psychology</span>
+<span class="text-info text-xs font-black uppercase tracking-tighter" style="">Psicología</span>
+</div>
+<h3 class="text-text-main font-extrabold text-lg leading-tight" style="">Manejo de Emociones</h3>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-black text-base uppercase tracking-widest shadow-md active:scale-95 transition-transform" style="">VER MÓDULO</button>
+</div>
+<!-- Module Card 2 -->
+<div class="bg-white border-2 border-info/10 rounded-2xl p-5 flex flex-col gap-6 shadow-lg">
+<div class="flex items-center gap-5">
+<div class="size-14 rounded-xl bg-info text-white flex items-center justify-center font-black text-2xl shadow-sm" style="">2</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-info font-bold" style="">diversity_3</span>
+<span class="text-info text-xs font-black uppercase tracking-tighter" style="">Social</span>
+</div>
+<h3 class="text-text-main font-extrabold text-lg leading-tight" style="">Empatía y Socialización</h3>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-black text-base uppercase tracking-widest shadow-md active:scale-95 transition-transform" style="">VER MÓDULO</button>
+</div>
+<!-- Module Card 3 -->
+<div class="bg-white border-2 border-info/10 rounded-2xl p-5 flex flex-col gap-6 shadow-lg">
+<div class="flex items-center gap-5">
+<div class="size-14 rounded-xl bg-info text-white flex items-center justify-center font-black text-2xl shadow-sm" style="">3</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-info font-bold" style="">lightbulb</span>
+<span class="text-info text-xs font-black uppercase tracking-tighter" style="">Innovación</span>
+</div>
+<h3 class="text-text-main font-extrabold text-lg leading-tight" style="">Creatividad Crítica</h3>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-black text-base uppercase tracking-widest shadow-md active:scale-95 transition-transform" style="">VER MÓDULO</button>
+</div>
+<!-- Module Card 4 -->
+<div class="bg-white border-2 border-info/10 rounded-2xl p-5 flex flex-col gap-6 shadow-lg">
+<div class="flex items-center gap-5">
+<div class="size-14 rounded-xl bg-info text-white flex items-center justify-center font-black text-2xl shadow-sm" style="">4</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-info font-bold" style="">balance</span>
+<span class="text-info text-xs font-black uppercase tracking-tighter" style="">Cívica</span>
+</div>
+<h3 class="text-text-main font-extrabold text-lg leading-tight" style="">Ética y Valores</h3>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-black text-base uppercase tracking-widest shadow-md active:scale-95 transition-transform" style="">VER MÓDULO</button>
+</div>
+<!-- Locked Module 5 -->
+<div class="bg-slate-50 border-2 border-slate-200 rounded-2xl p-5 flex flex-col gap-6 shadow-inner opacity-70">
+<div class="flex items-center gap-5">
+<div class="size-14 rounded-xl bg-slate-200 flex items-center justify-center text-slate-500 font-black text-2xl" style="">5</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-slate-400 font-bold" style="">record_voice_over</span>
+<span class="text-slate-400 text-xs font-black uppercase tracking-tighter" style="">Comunicación</span>
+</div>
+<h3 class="text-slate-600 font-extrabold text-lg leading-tight" style="">Comunicación Asertiva</h3>
+</div>
+</div>
+<button class="w-full bg-slate-200 text-slate-500 py-4 rounded-xl font-black text-base uppercase tracking-widest" disabled="" style="">BLOQUEADO</button>
+</div>
+<!-- Locked Module 6 -->
+<div class="bg-slate-50 border-2 border-slate-200 rounded-2xl p-5 flex flex-col gap-6 shadow-inner opacity-70">
+<div class="flex items-center gap-5">
+<div class="size-14 rounded-xl bg-slate-200 flex items-center justify-center text-slate-500 font-black text-2xl" style="">6</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-slate-400 font-bold" style="">school</span>
+<span class="text-slate-400 text-xs font-black uppercase tracking-tighter" style="">Educación</span>
+</div>
+<h3 class="text-slate-600 font-extrabold text-lg leading-tight" style="">Pedagogía Activa</h3>
+</div>
+</div>
+<button class="w-full bg-slate-200 text-slate-500 py-4 rounded-xl font-black text-base uppercase tracking-widest" disabled="" style="">BLOQUEADO</button>
+</div>
+<div class="col-span-1 sm:col-span-2 py-8 text-center">
+<p class="text-text-main/50 text-base font-bold italic" style="">Desliza para ver los 12 módulos disponibles</p>
+<div class="flex justify-center gap-2 mt-4">
+<div class="size-2 rounded-full bg-primary"></div>
+<div class="size-2 rounded-full bg-slate-300"></div>
+<div class="size-2 rounded-full bg-slate-300"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-4 border-primary px-4 pb-8 pt-4 shadow-[0_-10px_20px_rgba(0,0,0,0.1)]">
+<div class="max-w-lg mx-auto flex justify-around items-center">
+<a class="flex flex-col items-center gap-2 flex-1" href="#" style="">
+<div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-white shadow-xl shadow-primary/40">
+<span class="material-symbols-outlined text-4xl" style="">auto_stories</span>
+</div>
+<p class="text-xs font-black uppercase tracking-widest text-primary" style="">Módulos</p>
+</a>
+<a class="flex flex-col items-center gap-2 flex-1" href="#" style="">
+<div class="flex h-14 w-14 items-center justify-center rounded-2xl text-text-main/40 hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-4xl" style="">cloud_download</span>
+</div>
+<p class="text-xs font-bold uppercase tracking-widest text-text-main/60" style="">Recursos</p>
+</a>
+<a class="flex flex-col items-center gap-2 flex-1" href="#" style="">
+<div class="flex h-14 w-14 items-center justify-center rounded-2xl text-text-main/40 hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-4xl" style="">contact_support</span>
+</div>
+<p class="text-xs font-bold uppercase tracking-widest text-text-main/60" style="">Q&amp;A</p>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

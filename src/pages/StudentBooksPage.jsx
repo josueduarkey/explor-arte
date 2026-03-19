@@ -32,10 +32,7 @@ export default function StudentBooksPage() {
 
       <main className="flex-1 w-full max-w-4xl mx-auto p-4 md:p-6">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold mb-2">Libros de Estudiantes</h2>
-          <p className="text-lg opacity-80">
-            Explora y lee tus materiales educativos favoritos.
-          </p>
+          <h2 className="text-3xl font-bold mb-2 text-center">Libros de Estudiantes</h2>
         </div>
 
         <div className="grid gap-6">

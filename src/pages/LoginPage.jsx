@@ -45,7 +45,7 @@ export default function LoginPage() {
                 isCapacitadorUnlocked()
                   ? navigate("/admin")
                   : navigate(
-                      `/admin/validacion?redirect=${encodeURIComponent("/admin")}`
+                      `/admin/validacion?redirect=${encodeURIComponent("/admin")}`,
                     )
               }
               className="group flex flex-col items-center justify-center w-full gap-3 p-6 bg-[#000080] hover:brightness-110 text-white rounded-2xl shadow-xl shadow-[#000080]/20 transition-all border-b-4 border-black/20 active:border-b-0 active:translate-y-1"
@@ -67,7 +67,7 @@ export default function LoginPage() {
 
             <button
               type="button"
-              onClick={() => navigate("/docente/modulo")}
+              onClick={() => navigate("/docente/dashboard")}
               className="group flex flex-col items-center justify-center w-full gap-3 p-6 bg-[#007BFF] hover:brightness-110 text-white rounded-2xl shadow-xl shadow-[#007BFF]/20 transition-all border-b-4 border-black/20 active:border-b-0 active:translate-y-1"
             >
               <div className="bg-white/20 rounded-full p-3 flex items-center justify-center">
