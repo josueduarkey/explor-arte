@@ -26,13 +26,6 @@ export default function DocenteModulePage() {
                 Módulo 1
               </h1>
             </div>
-            <button
-              type="button"
-              onClick={() => navigate(-1)}
-              className="bg-[#007BFF] text-white text-sm font-black tracking-widest uppercase px-3 py-1 rounded hover:bg-[#0069e0] transition-colors"
-            >
-              VOLVER
-            </button>
           </div>
         </header>
 
